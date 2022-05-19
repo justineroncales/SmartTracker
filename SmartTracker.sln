@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31729.503
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartTracker.Android", "SmartTracker\SmartTracker.Android\SmartTracker.Android.csproj", "{BD1E4966-8D2F-44CD-8B3E-BA4A7804A88D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartTracker", "SmartTracker\SmartTracker\SmartTracker.csproj", "{3CC6B2C6-F127-4A7A-9485-48DE1A3A5442}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BD1E4966-8D2F-44CD-8B3E-BA4A7804A88D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD1E4966-8D2F-44CD-8B3E-BA4A7804A88D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD1E4966-8D2F-44CD-8B3E-BA4A7804A88D}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{BD1E4966-8D2F-44CD-8B3E-BA4A7804A88D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD1E4966-8D2F-44CD-8B3E-BA4A7804A88D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD1E4966-8D2F-44CD-8B3E-BA4A7804A88D}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{3CC6B2C6-F127-4A7A-9485-48DE1A3A5442}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CC6B2C6-F127-4A7A-9485-48DE1A3A5442}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CC6B2C6-F127-4A7A-9485-48DE1A3A5442}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{3CC6B2C6-F127-4A7A-9485-48DE1A3A5442}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CC6B2C6-F127-4A7A-9485-48DE1A3A5442}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3CC6B2C6-F127-4A7A-9485-48DE1A3A5442}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F61BD82B-A58C-432F-A639-2560845ED1F0}
+	EndGlobalSection
+EndGlobal

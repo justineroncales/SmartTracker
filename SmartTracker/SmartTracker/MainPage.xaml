@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SmartTracker.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="Welcome to Smart Tracker!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <Image Source="icon.png" WidthRequest="180" HeightRequest="180"></Image>
+        <Label Text="Begin your experience now" FontSize="Title" Padding="30,10,30,10"/>
+        <Label Text="Smart Tracker is an application that able to send exact location through form of sms with google link" FontSize="16" Padding="30,0,30,0"/>
+        <Label Text="Smart Tracker is an application that allows you to check live weather" FontSize="16" Padding="30,0,30,0"/>
+
+        <Grid Padding="0,20,0,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*" />
+                <RowDefinition />
+                <RowDefinition Height="100" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <ImageButton x:Name="helicopter" Grid.Column="0"
+                    VerticalOptions="Center" 
+                    BorderWidth="1.5"
+                    CornerRadius="50"
+                    Source="helicopter.png"
+                    BackgroundColor="Black"
+                    Clicked="helicopter_Clicked"  />
+
+            <Label
+                Grid.Column="0"
+                        FontFamily="arial"
+                        TextColor="White"
+                        Text="Seek Help" 
+                        HorizontalOptions="Center" 
+                        VerticalOptions="Center">
+
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer
+            Tapped="helicopter_Clicked"
+            NumberOfTapsRequired="1" />
+                </Label.GestureRecognizers>
+            </Label>
+
+            <ImageButton x:Name="weather" Grid.Column="1"
+                    VerticalOptions="Center" 
+                    BorderWidth="1.5"
+                    CornerRadius="50"
+                    Source="weather.png"
+                    BackgroundColor="Black"
+                    Clicked="weather_Clicked"/>
+            <Label
+                Grid.Column="1"
+                        FontFamily="arial"
+                        TextColor="White"
+                        Text="Check weather" 
+                        HorizontalOptions="Center" 
+                        VerticalOptions="Center">
+
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer
+            Tapped="weather_Clicked"
+            NumberOfTapsRequired="1" />
+                </Label.GestureRecognizers>
+            </Label>
+        </Grid>
+    </StackLayout>
+
+</ContentPage>

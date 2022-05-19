@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SmartTracker.ReportPage"
+             BackgroundColor="#112B47">
+    <ContentPage.Content>
+
+        <StackLayout Padding="5" VerticalOptions="End" HorizontalOptions="FillAndExpand">
+            <Grid VerticalOptions="Start">
+                <Grid.Margin>
+                    <OnPlatform x:TypeArguments="Thickness">
+                        <On Platform="Android">5,0,5,5</On>
+                    </OnPlatform>
+                </Grid.Margin>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="Auto"></ColumnDefinition>
+                    <ColumnDefinition Width="Auto"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <ScrollView>
+                    <Editor  x:Name="Message"
+                    Placeholder="Message" TextColor="White" PlaceholderColor="Gray"
+                    Keyboard="Plain" AutoSize="TextChanges" />
+                </ScrollView>
+                <ImageButton x:Name="Send1"
+                             Source="Send1.png"
+                             BackgroundColor="Transparent"
+                             BorderWidth="1.5"
+                             BorderColor="ForestGreen" 
+                             Grid.Column="2" 
+                             WidthRequest="50" 
+                             HeightRequest="50"
+                             CornerRadius="25"
+                             VerticalOptions="CenterAndExpand"
+                             Clicked="Send1_Clicked"/>
+                <!--<ImageButton x:Name="Send2"
+                             Source="Send2.png"
+                             BackgroundColor="Transparent"
+                             BorderWidth="1.5"
+                             BorderColor="ForestGreen" 
+                             Grid.Column="1" 
+                             WidthRequest="50" 
+                             HeightRequest="50"
+                             CornerRadius="25"
+                             VerticalOptions="Center"/>-->
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
